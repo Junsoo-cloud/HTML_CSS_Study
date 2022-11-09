@@ -2,7 +2,7 @@
 <!-- 주석 처리 하는 법-->
 
 
-<!--
+
 <!DOCTYPE html>
 <html lang="ko">
 	<head>
@@ -19,7 +19,7 @@
 		</p>
 	</body>
 </html>
--->
+
 	
 
 
@@ -112,4 +112,53 @@ ex) <a href="https://google.co.kr">Google</a>-->
 <input type="radio" name="gender" value="여자" checked>  여자
 
  	
- 	
+ 	<!--
+ 	체크 박스를 만드는 <input type="checkbox">
+ 	-주요 속성-
+	* name : 라디오 버튼의 이름
+ 	* value : 전송될 선택지의 값
+ 	* checked : 처음부터 선택돼 있게 하고 싶을 때 지정 = 처음부터 선택이 되어 있는 상태!
+ 	-->
+<input type="checkbox" name="color" value="파란색" checked> 파란색
+<input type="checkbox" name="color" value="노란색" > 노란색
+<input type="checkbox" name="color" value="주황색" > 주황색
+
+ 	<!--
+ 	전송 버튼을 만드는 <input type="submit">
+ 	-주요 속성-
+	* name : 버튼의 이름
+ 	* value : 버튼에 출력되는 글자
+ 	+ * src : 버튼에 사용하고 싶은 이미지 파일의 경로
+ 	+ * alt : 이미지를 설명하는 글자  (if 이미지 파일로 전송하고 싶다면)
+ 	-->
+
+<input type="submit" value="전송">
+
+<input type="image" src="submit-button-png-4.jpg" alt="전송"> <!-- 여기선 value 값을 지정해주면 사진이 덮여 버리기 때문에 value값을 지정하지 않음-->
+
+	<!--
+ 	선택 박스를 만드는 <select> 태그 + <option> 태그
+ 	-select 주요 속성-
+	* name : 버튼의 이름
+ 	* multiple : shift 또는 ctrl키로 여러 항목을 선택 가능
+
+ 	-option 주요 속성-
+ 	value : 전송될 선택지의 값
+ 	selected : 처음부터 항목 선택
+ 	-->
+
+혈액형
+<select name="bloodtype">
+	<option value="A형">A</option>
+	<option value="B형">B</option>
+	<option value="O형">O</option>
+	<option value="AB형">AB</option>
+	<option value="모름" selected>모름</option>
+</select>
+
+	<!-- 여러 줄 텍스트 입력란을 만드는 <textarea>태그
+	<textarea name="message">메세지 입력 .. 
+	textarea는 placeholder 속성 지정하는 것이 좋음!
+	-->
+
+<textarea name"message" placeholder="메세지 입력"></textarea>
