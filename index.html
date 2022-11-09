@@ -1,4 +1,4 @@
-<!-- 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 토큰-->
+<!-- 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 토큰-->
 <!-- 주석 처리 하는 법-->
 
 
@@ -70,3 +70,46 @@ ex) <a href="https://google.co.kr">Google</a>-->
 <a href="mailto:kfxsmt1@naver.com">문의</a> <!-- 메일 전용 링크
 											href 속성에 mailto 라고 작성 & 자동으로 메일 주소가 받는 사람으로 입력됨-->
 
+<!-- 입력 양식 만들기
+
+    * <form>태그 = 입력 양식란을 만드는 태그
+	-주요 속성-
+	action : 데이터의 전송 대상 페이지 지정
+	method : 데이터의 전송 방법 지정 (get,post)
+	name : 입력 양식의 이름 지정
+
+	입력 양식에 사용하는 부품
+
+	* <input type="text"> : 한 줄 텍스트 입력란
+
+	<input type="text" placeholder="ㅡㅡㅡ"> 처럼 입력란에 미리 텍스트를 입력할 수 있음 ex) 이름 (이름) 처럼 희미하게 보이는 것
+
+
+	다양한 종류의 한 줄 텍스트 입력란
+	* type="email" : 메일 주소 입력란
+	* type="url" : 웹 사이트 URL 입력란 
+	이렇게 지정하면 브라우저가 자동으로 확인해줌!
+	+ type="search" type="tel" 등
+
+	-->
+	
+<form action="example.php" method="post" name="contact-form">
+	이름 : <input type="text">
+	<input type="text" placeholder="이름">
+	이름 : <input type="text" placeholder="이름">
+</form>
+
+	
+	<!-- 
+	라디오 버튼을 만드는 <input type="radio"> : 여러 선택지중 하나만 선택 = 객관식 느낌!
+	-주요 속성-
+	* name : 라디오 버튼의 이름
+ 	* value : 전송될 선택지의 값
+ 	* checked : 처음부터 선택돼 있게 하고 싶을 때 지정 = 처음부터 선택이 되어 있는 상태!
+-->
+성별: 
+<input type="radio" name="gender" value="남자"> 남자
+<input type="radio" name="gender" value="여자" checked>  여자
+
+ 	
+ 	
