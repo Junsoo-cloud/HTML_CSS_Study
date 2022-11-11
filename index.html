@@ -163,3 +163,18 @@ ex) <a href="https://google.co.kr">Google</a>-->
 
 <textarea name"message" placeholder="메세지 입력"></textarea>
  <!-- 깃허브 .. -->dddd
+
+<!-- 사용하기 쉬운 입력 양식 만들기
+
+	* 입력 양식의 레이블을 만드는 <label>태그 
+	
+	테이블 태그를 사용하면 입력 양식 부분과 레이블이 연결됨
+	작은 것을 클릭하는것보다 사용하기 쉬운 입력 양식 만들 수 있음 
+	이때 레이블 텍스트 부분을 <label>로 감싸고, for 속성을 지정함
+	+ 연결하고 싶은 입력 양식에 id 속성을 줘야 함!-->
+
+<input type="checkbox" name="travel" value="국내" id="korea">
+<label for="korea">국내</label>
+
+<input type="checkbox" name="travel" value="유럽" id="europe">
+<label for="europe">유럽</label>
