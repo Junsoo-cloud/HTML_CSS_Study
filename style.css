@@ -1,4 +1,53 @@
-.title {
+@charset "utf-8"
+	body {
+		background-color: #fffeee;
+}
+
+
+/* css 기본 문법
+h1(선택자){
+	color(속성):red(값);
+}
+
+-선택자 : 어떤 것을 장식할 것인지?
+-속성: 무엇을 변경할 것인지?
+-값: 외관을 어떻게 변경할 것인지?
+
+*/
+
+/* CSS 작성 시 규칙
+
+- 대문자 금지
+- 여러 개의 장식 지정 시 h1,p 와 같이 쉼표 사용하기
+- 단위 지정하기
+	20px 픽셀 화면 위의 최서 단위 설정
+	% 부모 요소의 크기를 기준! -> 비율로 지정하는 단위
+	rem 루트요소(html)에 지정된 크기를 기준
+-요소 내부의 요소 지정하기
+*/
+
+html {
+	font-family: 'Gowun Batang', cursive;
+	font-size: 100%;
+}
+h1 {
 	font-weight: bold;
-	font-size: 30px;
+	font-family: "맑은 고딕", "Malgun Gothic",MalgunGothic, sans-serif;
+	font-size: 2rem;
+	text-align: center;
+	font-family: 'Gowun Batang', cursive;
+	color: LightCoral;
+}
+h2 {
+	font-family: "나눔바른고딕","Nanum Barun Gothic", NanumBarunGothic, sans-serif;
+	font-size: 20px
+	color: Tomato;
+}
+p {
+	font-weight: bold;
+	line-height: 1.7;
+	color:Orchid;
+}
+body {
+	background-color: Lavender;
 }
