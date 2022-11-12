@@ -49,5 +49,15 @@ p {
 	color:Orchid;
 }
 body {
-	background-color: Lavender;
+	/*background-color: Lavender;*/
+	background-color: #f5f2e5;
+	background-image: url(/workspace/HTML_CSS/pic.jpg);
+	
+}
+div {
+	background: #0bd;
+	width: 500px;
+	height: 300px;
+	margin-top: 30px;
+	margin-left: 100px;
 }
