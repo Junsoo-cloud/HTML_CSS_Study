@@ -51,7 +51,12 @@ p {
 body {
 	/*background-color: Lavender;*/
 	background-color: #f5f2e5;
-	background-image: url(/workspace/HTML_CSS/pic.jpg);
+	background-image: url(images/pic.jpg);
+	background-repeat: no repeat;
+	/* background-position: top center;  배경 이미지를 출력하는 위치 지정*/
+	/* background-size: contain;  가로 세로 비율을 유지하고, 이미지가 모두 출력되게 지정
+	height: 100vh; */
+	background-position: 30px 80px; /* 이미지를 왼쪽에서 30px,위에서 80px 이동하게 지정!*/
 	
 }
 div {
@@ -60,4 +65,24 @@ div {
 	height: 300px;
 	margin-top: 30px;
 	margin-left: 100px;
+}
+	
+/* 선 긋기 */
+
+p {
+	border-width: thick;
+	border-style: solid;
+}
+div {
+	border-width: 4px 4px 4px 4px;
+	border-style: solid;
+}
+.item {
+	background: #0bd;
+	color: #fff;
+	margin: 10px;
+	padding: 10px;
+}
+.container {
+	display: flex;
 }
